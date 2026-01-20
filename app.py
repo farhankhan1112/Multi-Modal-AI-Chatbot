@@ -4,7 +4,7 @@ from PIL import Image
 from pypdf import PdfReader
 
 # ================= CONFIG =================
-genai.configure(api_key="AIzaSyBp02dcv2uEukaHbkI5p-qQSXlYnQNynMg")
+genai.configure(api_key="Enter GEMINI API KEY")
 
 TEXT_MODEL = genai.GenerativeModel("gemini-2.5-flash")
 VISION_MODEL = genai.GenerativeModel("gemini-2.5-flash")
@@ -129,3 +129,4 @@ if mode == "PDF Document Chat":
 
             with st.chat_message("assistant"):
                 st.markdown(response.text)
+
